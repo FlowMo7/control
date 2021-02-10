@@ -7,6 +7,9 @@ import kotlin.String
  *   `$ ./gradlew buildSrcVersions`
  */
 object Libs {
+    /**
+     * https://github.com/Kotlin/kotlinx.serialization
+     */
     const val kotlinx_serialization_core: String =
             "org.jetbrains.kotlinx:kotlinx-serialization-core:" +
             Versions.org_jetbrains_kotlinx_kotlinx_serialization
@@ -40,8 +43,20 @@ object Libs {
     /**
      * https://kotlinlang.org/
      */
+    const val kotlin_gradle_plugin: String = "org.jetbrains.kotlin:kotlin-gradle-plugin:" +
+            Versions.org_jetbrains_kotlin
+
+    /**
+     * https://kotlinlang.org/
+     */
     const val kotlin_scripting_compiler_embeddable: String =
             "org.jetbrains.kotlin:kotlin-scripting-compiler-embeddable:" +
+            Versions.org_jetbrains_kotlin
+
+    /**
+     * https://kotlinlang.org/
+     */
+    const val kotlin_serialization: String = "org.jetbrains.kotlin:kotlin-serialization:" +
             Versions.org_jetbrains_kotlin
 
     /**
@@ -54,18 +69,6 @@ object Libs {
      * https://kotlinlang.org/
      */
     const val kotlin_stdlib: String = "org.jetbrains.kotlin:kotlin-stdlib:" +
-            Versions.org_jetbrains_kotlin
-
-    /**
-     * https://kotlinlang.org/
-     */
-    const val kotlin_gradle_plugin: String = "org.jetbrains.kotlin:kotlin-gradle-plugin:" +
-            Versions.org_jetbrains_kotlin
-
-    /**
-     * https://kotlinlang.org/
-     */
-    const val kotlin_serialization: String = "org.jetbrains.kotlin:kotlin-serialization:" +
             Versions.org_jetbrains_kotlin
 
     /**
