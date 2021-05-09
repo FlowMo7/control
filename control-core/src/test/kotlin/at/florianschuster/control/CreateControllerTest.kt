@@ -28,7 +28,7 @@ internal class CreateControllerTest {
         assertEquals(3, sut.statesTransformer(mockk(), flowOf(3)).single())
 
         assertEquals(defaultTag(), sut.tag)
-        assertEquals(ControllerLog.default, sut.controllerLog)
+        assertEquals(ControllerLog.None, sut.controllerLog)
 
         assertEquals(ControllerStart.Lazy, sut.controllerStart)
         assertEquals(defaultScopeDispatcher(), sut.dispatcher)
